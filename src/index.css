@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  @apply scroll-smooth;
+}
+
+body {
+  @apply font-Montserrat;
+}
+
+.scroll-navigation {
+  @apply overflow-x-clip overflow-y-clip md:overflow-y-visible;
+}
+
+.header {
+  @apply fixed left-0 top-0 w-full bg-white py-6 duration-500 ease-in-out md:static md:py-6;
+}
+
+.header.active {
+  @apply fixed left-0 top-0 z-50 w-full bg-white py-3 shadow-xl duration-500 ease-in-out md:static md:py-6 md:shadow-none;
+}
+
+.navbar {
+  @apply fixed right-0 top-0 z-50 flex min-h-screen w-2/3 translate-x-full justify-center bg-white pt-24 transition-all md:static md:min-h-0 md:w-auto md:translate-x-0 md:bg-transparent md:pt-0;
+}
+
+.navbar.active {
+  @apply fixed right-0 top-0 z-50 flex min-h-screen w-2/3 translate-x-0 justify-center bg-white pt-24 transition-all md:static md:min-h-0 md:w-auto md:translate-x-0 md:bg-transparent md:pt-0;
+}
+
+.scroll-button {
+  @apply fixed -bottom-12 right-12 flex size-12 items-center justify-center rounded-full bg-rose-600 shadow-lg duration-200 ease-in-out;
+}
+
+.scroll-button.active {
+  @apply fixed bottom-12 right-12 flex size-12 items-center justify-center rounded-full bg-rose-600 shadow-lg duration-200 ease-in-out;
+}
