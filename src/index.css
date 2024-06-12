@@ -37,3 +37,15 @@ body {
 .scroll-button.active {
   @apply fixed bottom-12 right-12 flex size-12 items-center justify-center rounded-full bg-rose-600 shadow-lg duration-200 ease-in-out;
 }
+
+.tooltip {
+  @apply rounded-md bg-white px-1 py-px text-sm font-light text-black;
+}
+
+.tab-trigger {
+  @apply flex items-center justify-center rounded-md bg-rose-300 px-4 py-1 text-white transition-all;
+}
+
+.tab-trigger.active {
+  @apply flex items-center justify-center rounded-md bg-gradient-to-r from-rose-400 to-rose-600 px-4 py-1 text-white transition-all;
+}
